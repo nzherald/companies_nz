@@ -1,6 +1,6 @@
 require "nz/companies/version"
 
-module Nz
+module NZ
   module Companies
     # Your code goes here...
   end

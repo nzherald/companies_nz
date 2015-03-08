@@ -1,6 +1,7 @@
-# Nz::Companies
+# NZ::Companies
 
-TODO: Write a gem description
+This gem is designed for working with the New Zealand Companies Office
+API.
 
 ## Installation
 
