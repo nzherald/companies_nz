@@ -1,4 +1,4 @@
-# NZ::Companies
+# CompaniesNZ
 
 This gem is designed for working with the New Zealand Companies Office
 API.
@@ -28,7 +28,7 @@ Future versions may structure the data in Structs.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nz-companies'
+gem 'companies_nz'
 ```
 
 And then execute:
@@ -37,15 +37,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install nz-companies
+    $ gem install companies_nz
 
 ## Usage
 
-```
+```ruby
+
   # to use the test environment (www.eat.businessdata.govt.nz)
-  client = NZ::Companies::Client.new(key_id: YOUR_KEY_ID, secret_key: YOUR_SECRET_KEY, test: true)
+  client = CompaniesNZ::Client.new(key_id: YOUR_KEY_ID, secret_key: YOUR_SECRET_KEY, test: true)
   # to use the live environment
-  client = NZ::Companies::Client.new(key_id: YOUR_KEY_ID, secret_key: YOUR_SECRET_KEY))
+  client = CompaniesNZ::Client.new(key_id: YOUR_KEY_ID, secret_key: YOUR_SECRET_KEY))
 
   # to search for entities with 'Mega' in the name
   resp = client.search_entities 'Mega'    # returns a JSON parsed as a Ruby hash
@@ -59,7 +60,7 @@ Or install it yourself as:
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/nz-companies/fork )
+1. Fork it ( https://github.com/nzherald/companies_nz/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
