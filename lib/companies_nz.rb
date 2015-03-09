@@ -1,6 +1,7 @@
 require 'companies_nz/version'
 require 'faraday'
-%w[client hmac_signer http_client].each { |f| require "companies_nz/#{f}" }
+
+%w[client hmac_signer].each { |f| require "companies_nz/#{f}" }
 
 module CompaniesNZ
   URL = 'http://www.businessdata.govt.nz'
